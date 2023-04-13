@@ -44,10 +44,10 @@ export const App = () => {
   };
 
   return (
-    <div className="bg-gray-600 w-full h-full min-h-screen py-10 px-28">
-      <h1 className="text-4xl text-white font-bold text-center">
+    <div className="bg-gray-600 w-full h-full min-h-screen py-10 px-10 md:px-20">
+      <h1 className="text-2xl md:text-4xl text-white font-bold text-center">
         {" "}
-        Cost list generator: {costs.length}{" "}
+        Cost list generator: {costs.length}
       </h1>
       <div>
         <div className="bg-purple-700 border-2 border-black my-8 p-5 text-white rounded-xl">

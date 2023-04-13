@@ -31,7 +31,7 @@ export const CostsAdd = ( { hadleAddCosts } ) => {
     }
 
   return (
-    <form className="grid grid-cols-2 gap-4 items-end" onSubmit={handleSubmit}>
+    <form className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 items-end" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="title">Title: </label>
         <input
@@ -40,7 +40,7 @@ export const CostsAdd = ( { hadleAddCosts } ) => {
           id="title"
           value={title}
           onChange={handleInputChange}
-          className="w-full p-2 text-lg font-semibold text-black rounded-lg tracking-wider"
+          className="w-full p-1 sm:p-2 text-lg font-semibold text-black rounded-lg tracking-wider"
         />
       </div>
       <div>
@@ -53,7 +53,7 @@ export const CostsAdd = ( { hadleAddCosts } ) => {
           max="999999"
           value={amount}
           onChange={handleInputChange}
-          className="w-full p-2 text-lg font-semibold text-black rounded-lg tracking-wider"
+          className="w-full p-1 sm:p-2 text-lg font-semibold text-black rounded-lg tracking-wider"
         />
       </div>
       <div>
@@ -66,12 +66,12 @@ export const CostsAdd = ( { hadleAddCosts } ) => {
           max="2050-12-31"
           value={date}
           onChange={handleInputChange}
-          className="w-full p-2 text-lg font-semibold text-black rounded-lg"
+          className="w-full p-1 sm:p-2 text-lg font-semibold text-black rounded-lg"
         />
       </div>
       <button
         type="submit"
-        className="px-5 py- bg-purple-900 hover:bg-purple-800 rounded-lg font-bold border border-white w-full h-12"
+        className="px-5 py-1 bg-purple-900 hover:bg-purple-800 rounded-lg font-bold border border-white w-full h-12"
       >
         Add Expense
       </button>
